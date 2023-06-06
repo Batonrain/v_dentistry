@@ -20,6 +20,8 @@ from front_card import views
 
 urlpatterns = [
     path("", views.index),
+    path("contacts", views.contacts),
     path("contacts/", views.contacts),
-    #path('admin/', admin.site.urls),
+    path("about", views.about),
+    path("about/", views.about),
 ]
