@@ -1,3 +1,116 @@
 {% extends "base.html" %}
-{% block title %} Index {% endblock title %}
-{% block header %} Главная {% endblock header %}
+{% load static %}
+{% block content %}
+
+<div class="container py-4">
+    <div class="p-5 mb-4 bg-body-tertiary rounded-3">
+        <div class="container-fluid py-5">
+        <h2 class="display-5 fw-bold">Ваша улыбка - наша главная цель!</h2>
+        <p class="col-md-8 fs-4">Мы - команда профессионалов, предлагающая высококачественные стоматологические услуги с непревзойденным уровнем заботы и внимания к каждому пациенту. Наша миссия - помочь вам достичь идеального здоровья полости рта и обеспечить вам красивую и здоровую улыбку, которой вы будете гордиться.</p>
+        </div>
+    </div>
+</div>
+
+<div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <h3 class="mb-0">Терапевтическая стоматология</h3>
+          <p class="card-text mb-auto">Большое и красивое описание указанной услуги</p>
+          <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+            Перейти
+            <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+          </a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+            <img src="{% static 'images/pexels-anna-shvets-3845729.jpg' %}" type="image/svg+xml" width="200" height="250" />    
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <h3 class="mb-0">Терапевтическая стоматология</h3>
+            <p class="card-text mb-auto">Большое и красивое описание указанной услуги</p>
+            <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+              Перейти
+              <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="{% static 'images/pexels-cedric-fauntleroy-4270079.jpg' %}" type="image/svg+xml" width="200" height="250" />
+          </div>
+        </div>
+      </div>
+</div>
+
+<div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <h3 class="mb-0">Терапевтическая стоматология</h3>
+          <p class="card-text mb-auto">Большое и красивое описание указанной услуги</p>
+          <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+            Перейти
+            <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+          </a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+            <img src="{% static 'images/pexels-cottonbro-studio-6528908.jpg' %}" type="image/svg+xml" width="200" height="250" />
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <h3 class="mb-0">Терапевтическая стоматология</h3>
+            <p class="card-text mb-auto">Большое и красивое описание указанной услуги</p>
+            <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+              Перейти
+              <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="{% static 'images/pexels-cottonbro-studio-6529115.jpg' %}" type="image/svg+xml" width="200" height="250" />
+          </div>
+        </div>
+      </div>
+</div>
+
+<div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <h3 class="mb-0">Терапевтическая стоматология</h3>
+          <p class="card-text mb-auto">Большое и красивое описание указанной услуги</p>
+          <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+            Перейти
+            <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+          </a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+            <img src="{% static 'images/pexels-nadezhda-moryak-7800525.jpg' %}" type="image/svg+xml" width="200" height="250" />
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <h3 class="mb-0">Терапевтическая стоматология</h3>
+            <p class="card-text mb-auto">Большое и красивое описание указанной услуги</p>
+            <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+              Перейти
+              <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+            </a>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+            <img src="{% static 'images/pexels-daniel-frank-287237.jpg' %}" type="image/svg+xml" width="200" height="250" />
+          </div>
+        </div>
+      </div>
+</div>
+
+{% endblock content %}
