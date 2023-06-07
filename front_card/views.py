@@ -9,3 +9,6 @@ def contacts(request):
 
 def about(request):
     return render(request, "about.html")
+
+def patients(request):
+    return render(request, "about.html")
