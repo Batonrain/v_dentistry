@@ -12,3 +12,11 @@ def about(request):
 
 def patients(request):
     return render(request, "about.html")
+
+def doctors(request):
+    return render(request, "doctors.html")
+
+def cost(request):
+    return render(request, "cost.html")
+
+    

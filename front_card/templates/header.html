@@ -1,3 +1,19 @@
+<div class="container" style="margin-bottom:-1px;">
+  <div class="d-flex flex-wrap justify-content-center py-3 border-bottom text-bg-dark">
+    <div class="col-md-4 themed-grid-col">
+      <span class="px-2 text-white">Санкт-Петербург, ул. Большая Пороховская, д. 26а</span>
+    </div>
+
+    <ul class="nav nav-pills">
+      <li class="nav-item px-2">
+        <a href="tel:+78121234567" role="link" class="btn btn-outline-light">+7 (812) 123-45-67</a>
+      </li>
+      <li class="nav-item px-2">
+        <a href="email:volod@yandex.ru" role="link" class="btn btn-outline-light">volod@yandex.ru</a>
+      </li>
+    </ul>
+  </div>
+</div>
 <div class="container">
     <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom text-bg-dark">
       <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
@@ -9,9 +25,17 @@
         <li class="nav-item"><a href="/" class="nav-link px-2 text-white text-secondary" aria-current="page">Главная</a></li>
         <li class="nav-item"><a href="/about" class="nav-link px-2 text-white">О нас</a></li>
         <li class="nav-item"><a href="/contacts" class="nav-link px-2 text-white">Контакты</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Пациентам</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Врачи</a></li>
-        <li class="nav-item"><a href="#" class="nav-link px-2 text-white">Стоимость</a></li>
+        <li class="nav-item"><a href="/patients" class="nav-link px-2 text-white">Пациентам</a></li>
+        <li class="nav-item"><a href="/doctors" class="nav-link px-2 text-white">Врачи</a></li>
+        <li class="nav-item"><a href="/cost" class="nav-link px-2 text-white">Стоимость</a></li>
+        <li class="nav-item">
+          <button 
+          id="makeAnAppointmentButton"
+          class="btn btn-outline-light" 
+          style="margin-right:5px;" 
+          data-toggle="modal" 
+          data-target="#exampleModal"
+          type="button">Записаться на приём</button></li>
       </ul>
     </header>
   </div>
