@@ -23,23 +23,17 @@
           <form class="needs-validation" method="POST">
             {% csrf_token %}
             <div class="row g-3">
-              <div class="col-sm-6">
-                <label for="firstName" class="form-label">Имя</label>
-                <input type="text" class="form-control" id="firstName" name="firstName" placeholder="" value="" required />
+              <div class="col-12">
+                <label for="name" class="form-label">Как к вам обращаться?</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="" value="" required />
                 <div class="invalid-feedback">Пожалуйста, заполните поле "имя"</div>
               </div>
 
-              <div class="col-sm-6">
-                <label for="lastName" class="form-label">Фамилия</label>
-                <input type="text" class="form-control" id="lastName" name="lastName" placeholder="" value="" required />
-                <div class="invalid-feedback">Пожалуйста, заполните поле "фамилия"</div>
-              </div>
-
               <div class="col-12">
-                <label for="phone" class="form-label">Мобильный телефон</label>
+                <label for="howToConnect" class="form-label">Как с вами связаться?</label>
                 <div class="input-group has-validation">
-                  <input type="phone" class="form-control" id="phone" name="phone" required />
-                  <div class="invalid-feedback">Пожалуйста, введите ваш номер телефона</div>
+                  <input type="text" class="form-control" id="howToConnect" name="howToConnect" required />
+                  <div class="invalid-feedback">Пожалуйста, введите предпочтительный способ связи</div>
                 </div>
               </div>
 

@@ -22,19 +22,17 @@ def cost(request):
 
 def appointment(request):
     if request.method == 'POST':
-        print(request.POST)
-        firstName = request.POST.get('firstName')
-        lastName = request.POST.get('lastName')
-        phone = request.POST.get('phone')
+        name = request.POST.get('name')
+        howToConnect = request.POST.get('howToConnect')
         date = request.POST.get('date')
         time = request.POST.get('time')
-        message = f'Мобильный телефон пациента: {phone} \n\n Желаемое время записи: {date} в {time}'
+        message = f'Желаемый способ связи: {howToConnect} \n\n Желаемое время записи: {date} в {time}'
 
         send_mail(
-            f'Новая запись на приём от {firstName} {lastName}',
+            f'Новая запись на приём от {name}',
             message,
-            'batonrain@yandex.ru',
-            ['batonrain@yandex.ru'],  # Замените настройками своего адреса электронной почты получателя
+            'drzatulkin@yandex.ru',
+            ['drzatulkin@yandex.ru'],  # Замените настройками своего адреса электронной почты получателя
             fail_silently=False,
         )
 

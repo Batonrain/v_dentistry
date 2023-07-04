@@ -1,42 +1,24 @@
-<div class="container" style="margin-bottom:-1px;">
-  <div class="d-flex flex-wrap justify-content-center py-3 border-bottom text-bg-dark">
-    <div class="col-md-4 themed-grid-col">
-      <span class="px-2 text-white">Санкт-Петербург, ул. Большая Пороховская, д. 26а</span>
-    </div>
-
+<nav class="py-2 bg-body-tertiary border-bottom" style="padding-top: 2.5rem!important;">
+  <div class="container d-flex flex-wrap">
+    <ul class="nav me-auto">
+      <li class="nav-item"><a href="/" class="nav-link link-body-emphasis px-2 active" style="font-size: 1.5rem;" aria-current="page">Главная</a></li>
+      <li class="nav-item"><a href="/about" class="nav-link link-body-emphasis px-2" style="font-size: 1.5rem;">О нас</a></li>
+      <li class="nav-item"><a href="/contacts" class="nav-link link-body-emphasis px-2" style="font-size: 1.5rem;">Контакты</a></li>
+      <li class="nav-item"><a href="/doctors" class="nav-link link-body-emphasis px-2" style="font-size: 1.5rem;">Врачи</a></li>
+      <li class="nav-item"><a href="/cost" class="nav-link link-body-emphasis px-2" style="font-size: 1.5rem;">Стоимость</a></li>
+      <li class="nav-item"><a href="/appointment" class="nav-link link-body-emphasis px-2" style="font-size: 1.5rem;">Записаться на приём</a></li>
+    </ul>
+  </div>
+</nav>
+<header class="py-3 mb-4 border-bottom">
+  <div class="container d-flex flex-wrap">
     <ul class="nav nav-pills">
       <li class="nav-item px-2">
-        <a href="tel:+78121234567" role="link" class="btn btn-outline-light">+7 (812) 123-45-67</a>
+        <a href="tel:+79817912180" role="link" class="btn btn-secondary">+7 (981) 791-21-80</a>
       </li>
       <li class="nav-item px-2">
-        <a href="email:volod@yandex.ru" role="link" class="btn btn-outline-light">volod@yandex.ru</a>
+        <a href="email:drzatulkin@yandex.ru" role="link" class="btn btn-secondary">drzatulkin@yandex.ru</a>
       </li>
     </ul>
   </div>
-</div>
-<div class="container">
-    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom text-bg-dark">
-      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-        <span class="fs-4 px-2 text-white">Клиника доктора Володьки</span>
-      </a>
-
-      <ul class="nav nav-pills">
-        <li class="nav-item"><a href="/" class="nav-link px-2 text-white text-secondary" aria-current="page">Главная</a></li>
-        <li class="nav-item"><a href="/about" class="nav-link px-2 text-white">О нас</a></li>
-        <li class="nav-item"><a href="/contacts" class="nav-link px-2 text-white">Контакты</a></li>
-        <li class="nav-item"><a href="/patients" class="nav-link px-2 text-white">Пациентам</a></li>
-        <li class="nav-item"><a href="/doctors" class="nav-link px-2 text-white">Врачи</a></li>
-        <li class="nav-item"><a href="/cost" class="nav-link px-2 text-white">Стоимость</a></li>
-        <li class="nav-item"><a href="/appointment" class="nav-link px-2 text-white">Записаться на приём</a></li>
-        {% comment %} <li class="nav-item">
-          <button 
-          id="makeAnAppointmentButton"
-          class="btn btn-outline-light" 
-          style="margin-right:5px;" 
-          data-toggle="modal" 
-          data-target="#exampleModal"
-          type="button">Записаться на приём</button></li> {% endcomment %}
-      </ul>
-    </header>
-  </div>
+</header>
