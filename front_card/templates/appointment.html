@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+  {% if success %}
+    <div class="container my-5">
+      <div class="position-relative p-5 text-center text-muted bg-body border border-dashed rounded-5">
+        <button type="button" class="position-absolute top-0 end-0 p-3 m-3 btn-close bg-secondary bg-opacity-10 rounded-pill" aria-label="Close"></button>
+        <svg class="bi mt-5 mb-3" width="48" height="48">
+          <use xlink:href="#check2-circle" />
+        </svg>
+        <h1 class="text-body-emphasis">Вы успешно записались на приём!</h1>
+        <p class="col-lg-6 mx-auto mb-4">Держите мобильный телефон под рукой, наш специалист вскоре вам перезвонит для уточнения некоторых деталей!</p>
+      </div>
+    </div>
+  {% endif %}
+
+  {% if success == false %}
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-md-7 col-lg-8">
+          <h4 class="mb-3">Запись на приём</h4>
+          <form class="needs-validation" method="POST">
+            {% csrf_token %}
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <label for="firstName" class="form-label">Имя</label>
+                <input type="text" class="form-control" id="firstName" name="firstName" placeholder="" value="" required />
+                <div class="invalid-feedback">Пожалуйста, заполните поле "имя"</div>
+              </div>
+
+              <div class="col-sm-6">
+                <label for="lastName" class="form-label">Фамилия</label>
+                <input type="text" class="form-control" id="lastName" name="lastName" placeholder="" value="" required />
+                <div class="invalid-feedback">Пожалуйста, заполните поле "фамилия"</div>
+              </div>
+
+              <div class="col-12">
+                <label for="phone" class="form-label">Мобильный телефон</label>
+                <div class="input-group has-validation">
+                  <input type="phone" class="form-control" id="phone" name="phone" required />
+                  <div class="invalid-feedback">Пожалуйста, введите ваш номер телефона</div>
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <label for="date" class="form-label">Желаемая дата</label>
+                <div class="input-group has-validation">
+                  <input type="date" class="form-control rounded-3" id="date" name="date" placeholder="25.05" />
+                  <div class="invalid-feedback">Пожалуйста, введите ваш номер телефона</div>
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <label for="time" class="form-label">Желаемое время</label>
+                <div class="input-group has-validation">
+                  <input type="time" class="form-control rounded-3" id="time" name="time" placeholder="13:00" />
+                  <div class="invalid-feedback">Пожалуйста, введите ваш номер телефона</div>
+                </div>
+              </div>
+              <button class="w-100 btn btn-primary btn-lg" type="submit">Записаться</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  {% endif %}
+{% endblock %}

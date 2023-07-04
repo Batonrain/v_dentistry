@@ -30,4 +30,5 @@ urlpatterns = [
     path("doctors/", views.doctors),
     path("cost", views.cost),
     path("cost/", views.cost),
+    path('appointment/', views.appointment, name='appointment'),
 ]

@@ -27,6 +27,15 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+EMAIL_BACKEND = 'django_smtp_ssl.SSLEmailBackend'
+EMAIL_HOST = 'smtp.yandex.ru'  # Замените настройками своего SMTP-сервера
+EMAIL_PORT = 465
+EMAIL_HOST_USER = 'batonrain@yandex.ru'  # Замените настройками своей электронной почты
+EMAIL_HOST_PASSWORD = 'lyqwedrbrgeplfgg'  # Замените настройками своей электронной почты
+EMAIL_USE_SSL = True
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+
+
 
 # Application definition
 
