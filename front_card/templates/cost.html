@@ -1,11 +1,330 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
 {% load static %}
 
 {% block content %}
-
-{% endblock content %}
-
-
-
-
-
+  <div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="therapeuticDentistryheading"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#therapeuticDentistry" aria-expanded="false" aria-controls="therapeuticDentistry">Терапевтическая стоматология</button></h2>
+      <div id="therapeuticDentistry" class="accordion-collapse collapse show" aria-labelledby="therapeuticDentistryheading" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <table class="table table-striped">
+            <tbody>
+              <tr>
+                <td>Лечение кариеса эмали зуба</td>
+                <td>5000 руб.</td>
+              </tr>
+              <tr>
+                <td>Лечение кариеса дентина зуба</td>
+                <td>7000 руб.</td>
+              </tr>
+              <tr>
+                <td>Лечение клиновидного дефекта</td>
+                <td>7000 руб.</td>
+              </tr>
+              <tr>
+                <td>Восстановление зуба методом объемной реставрации с применением стекловолоконного штифта</td>
+                <td>11000 руб.</td>
+              </tr>
+              <tr>
+                <td>Замена пломбы в м/к коронке на имплантате</td>
+                <td>7000 руб.</td>
+              </tr>
+              <tr>
+                <td>Демонтаж анкерного штифта/культевой вкладки</td>
+                <td>8000 руб.</td>
+              </tr>
+              <tr>
+                <td>Эндодонтическое лечение зуба (лечение корневых каналов c применением гутаперчевых штифтов и силера методом латеральной конденсации) x 1 к/к</td>
+                <td>8000 руб.</td>
+              </tr>
+              <tr>
+                <td>Эндодонтическое лечение зуба (лечение корневых каналов c применением гидроксида кальция) x 1 к/к</td>
+                <td>2000 руб.</td>
+              </tr>
+              <tr>
+                <td>Постановка временной пломбы</td>
+                <td>1500 руб.</td>
+              </tr>
+              <tr>
+                <td>Парадонтологическая чистка зубов с восстанавливающей пастой</td>
+                <td>7000 руб.</td>
+              </tr>
+              <tr>
+                <td>Профессиональная гигиеническая чистка зубов с применением мягкой щетки</td>
+                <td>4000 руб.</td>
+              </tr>
+              <tr>
+                <td>Комплексная гигиеническая чистка (снятие наддесневых зубных отложений с применением ультразвукового скалера, снятие мягких отложений с применением air-flow, полировка, покрытие десенситайзером, обучение гигиене)</td>
+                <td>8000 руб.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="orthopedicDentistryHeading"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#orthopedicDentistry" aria-expanded="false" aria-controls="collapseTwo">Ортопедическая стоматология</button></h2>
+      <div id="orthopedicDentistry" class="accordion-collapse collapse" aria-labelledby="orthopedicDentistryHeading" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <table class="table table-striped">
+            <tbody>
+              <tr>
+                <td>Культевая вкладка (кобальт-хромовый сплав)</td>
+                <td>8000 руб.</td>
+              </tr>
+              <tr>
+                <td>Коронка из диоксида циркония (1 единица) (на имплантат/вкладку/ культю зуба)</td>
+                <td>30000 руб.</td>
+              </tr>
+              <tr>
+                <td>Металлокерамическая коронка (1 единица) (на имплантат/вкладку/ культю зуба)</td>
+                <td>15000 руб.</td>
+              </tr>
+              <tr>
+                <td>Временная коронка (композит)</td>
+                <td>4000 руб.</td>
+              </tr>
+              <tr>
+                <td>Фиксация коронки на постоянный цемент</td>
+                <td>4000 руб.</td>
+              </tr>
+              <tr>
+                <td>Фиксация коронки на временный цемент</td>
+                <td>4000 руб.</td>
+              </tr>
+              <tr>
+                <td>Реставрация керамики (1 единица)</td>
+                <td>8000 руб.</td>
+              </tr>
+              <tr>
+                <td>Снятие несостоятельной коронки (1 единица)</td>
+                <td>5000 руб.</td>
+              </tr>
+              <tr>
+                <td>Частичный съемный протез до 3-х зубов (акрил)</td>
+                <td>25000 руб.</td>
+              </tr>
+              <tr>
+                <td>Частичный съемный протез от 3-х до 12-ти зубов (акрил)</td>
+                <td>50000 руб.</td>
+              </tr>
+              <tr>
+                <td>Полный съемный протез (акрил)</td>
+                <td>50000 руб.</td>
+              </tr>
+              <tr>
+                <td>Частичный протез до 3-х зубов (нейлон)</td>
+                <td>30000 руб.</td>
+              </tr>
+              <tr>
+                <td>Частичный съемный протез от 3-х до 12-ти зубов (нейлон)</td>
+                <td>65000 руб.</td>
+              </tr>
+              <tr>
+                <td>Полный съемный протез (нейлон)</td>
+                <td>70000 руб.</td>
+              </tr>
+              <tr>
+                <td>Частичный съемный протез до 3-х зубов (акри-фри)</td>
+                <td>30000 руб.</td>
+              </tr>
+              <tr>
+                <td>Частичный съемный протез от 3-х до 12-ти зубов (акри-фри)</td>
+                <td>65000 руб.</td>
+              </tr>
+              <tr>
+                <td>Полный съемный протез (акри-фри)</td>
+                <td>75000 руб.</td>
+              </tr>
+              <tr>
+                <td>Бюгельный протез с замковым креплением</td>
+                <td>40000 руб.</td>
+              </tr>
+              <tr>
+                <td>Бюгельный протез на телескопическом креплении</td>
+                <td>55000 руб.</td>
+              </tr>
+              <tr>
+                <td>Хирургический шаблон лабораторный</td>
+                <td>30000 руб.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="surgicalDentistryHeading"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#surgicalDentistry" aria-expanded="false" aria-controls="collapseTwo">Хирургическая стоматология</button></h2>
+      <div id="surgicalDentistry" class="accordion-collapse collapse" aria-labelledby="surgicalDentistryHeading" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <table class="table table-striped">
+            <tbody>
+              <tr>
+                <td>Удаление подвижного зуба </td>
+                <td>4000 руб.</td>
+              </tr>
+              <tr>
+                <td>Удаление зуба или корня зуба стандартное</td>
+                <td>5000 руб.</td>
+              </tr>
+              <tr>
+                <td>Удаление сложное</td>
+                <td>6000 - 15000 руб.</td>
+              </tr>
+              <tr>
+                <td>Удаление ретенированного/ дистопированного зуба в т. ч. 8-го</td>
+                <td>20000 руб.</td>
+              </tr>
+              <tr>
+                <td>Лечение перикоронарита (иссечение капюшона 8-го зуба)</td>
+                <td>7000 руб.</td>
+              </tr>
+              <tr>
+                <td>Вскрытие гнойного очага, дренаж</td>
+                <td>4000 руб.</td>
+              </tr>
+              <tr>
+                <td>Кюретаж лунки с обработкой антисептическим раствором</td>
+                <td>5000 руб.</td>
+              </tr>
+              <tr>
+                <td>Применение препарата (Альвостаз)</td>
+                <td>2000 руб.</td>
+              </tr>
+              <tr>
+                <td>Резекция верхушки корня (фронтальная группа зубов) </td>
+                <td>15000 руб.</td>
+              </tr>
+              <tr>
+                <td>Наложение шва (кетгут, монофиламентная нить, шелк)</td>
+                <td>1000 руб.</td>
+              </tr>
+              <tr>
+                <td>Установка имплантата (Adin) (1 единица)</td>
+                <td>30000 руб.</td>
+              </tr>
+              <tr>
+                <td>Установка формирователя десны (Adin) (1 единица)</td>
+                <td>8000 руб.</td>
+              </tr>
+              <tr>
+                <td>Операция синус-лифтинг (открытый/ закрытый метод)</td>
+                <td>50000 руб.</td>
+              </tr>
+              <tr>
+                <td>Применение барьерной мембраны (Биопласт-Дент) </td>
+                <td>10000 руб.</td>
+              </tr>
+              <tr>
+                <td>Установка биологического костного заменителя (Био-Осс) (0,5 гр.)</td>
+                <td>20000 руб.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="commonServicesHeading"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#commonServices" aria-expanded="false" aria-controls="collapseTwo">Общие услуги</button></h2>
+      <div id="commonServices" class="accordion-collapse collapse" aria-labelledby="commonServicesHeading" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <table class="table table-striped">
+            <tbody>
+              <tr>
+                <td>Консультация врача — стоматолога</td>
+                <td>бесплатно</td>
+              </tr>
+              <tr>
+                <td>Консультация врача — стоматолога с осмотром, составлением зубной формулы, плана лечения</td>
+                <td>1000 руб.</td>
+              </tr>
+              <tr>
+                <td>Анестезия инфильтрационная, проводниковая</td>
+                <td>1000 руб.</td>
+              </tr>
+              <tr>
+                <td>Консультация врача — стоматолога с расшифровкой КТ</td>
+                <td>бесплатно</td>
+              </tr>
+              <tr>
+                <td>Применение коферадма/оптрагейт</td>
+                <td>500 руб.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="OrthodonticsHeading"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Orthodontics" aria-expanded="false" aria-controls="collapseTwo">Ортодонтия</button></h2>
+      <div id="Orthodontics" class="accordion-collapse collapse" aria-labelledby="OrthodonticsHeading" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <table class="table table-striped">
+            <tbody>
+              <tr>
+                <td>Консультация врача-ортодонта</td>
+                <td>2000 руб.</td>
+              </tr>
+              <tr>
+                <td>Диагностика(снятие оттиска, расчёты, анализ данных перед ортодонтическим лечением, составление и обсуждение плана лечения, фотографирование)</td>
+                <td>5000 руб.</td>
+              </tr>
+              <tr>
+                <td>Ортодонтический аппарат одночелюстной (изготовление, припасовка)</td>
+                <td>35000 руб.</td>
+              </tr>
+              <tr>
+                <td>Изготовление сплинта</td>
+                <td>30000 руб.</td>
+              </tr>
+              <tr>
+                <td>Тренер/LM– активатор/эластопозиционер</td>
+                <td>20000 руб.</td>
+              </tr>
+              <tr>
+                <td>Комбинированная самолигирующая брекет-система «Damon» (1 челюсть)</td>
+                <td>85000 руб.</td>
+              </tr>
+              <tr>
+                <td>Металлическая самолигирующая брекет-система «Damon» (1 челюсть)</td>
+                <td>60000 руб.</td>
+              </tr>
+              <tr>
+                <td>Лигатурная металлическая брекет-система (1 челюсть)</td>
+                <td>30000 руб.</td>
+              </tr>
+              <tr>
+                <td>Лигатурная комбинированная брекет-система (1 челюсть)</td>
+                <td>35000 руб.</td>
+              </tr>
+              <tr>
+                <td>Активация брекет-системы (1 челюсть)</td>
+                <td>4000 руб.</td>
+              </tr>
+              <tr>
+                <td>Фиксация брекета повторная</td>
+                <td>3000 руб.</td>
+              </tr>
+              <tr>
+                <td>Фиксация ретейнера к одному зубу</td>
+                <td>2500 руб.</td>
+              </tr>
+              <tr>
+                <td>Съемный ретенционный аппарат (изготовление и припасовка) (1 челюсть)</td>
+                <td>7000 руб.</td>
+              </tr>
+              <tr>
+                <td>Снятие брекет-системы с одной челюсти</td>
+                <td>10000 руб.</td>
+              </tr>
+              <tr>
+                <td>Элайнеры (Star-Smile)</td>
+                <td>от 275.000 руб.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
